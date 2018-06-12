@@ -1,0 +1,29 @@
+
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add New Employee</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <form (ngSubmit)="NewUserForm()">
+        <ion-item>
+              <ion-label>Name</ion-label>
+              <ion-input type="text" [(ngModel)]="addemployee.Fullname" name="name"></ion-input>
+        </ion-item><br>
+        <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="email" [(ngModel)]="addemployee.Email" name="email" ></ion-input>
+      </ion-item><br>
+      <ion-item>
+          <ion-label>IMEI</ion-label>
+          <ion-input type="number" [(ngModel)]="addemployee.IMEI" name="IMEI"></ion-input>
+    </ion-item><br>
+    <ion-item>
+      <ion-label>JoiningDate</ion-label>
+      <ion-input type="date" [(ngModel)]="addemployee.JoiningDate" name="JoiningDate" value=""></ion-input>
+</ion-item><br>
+    
+        <button ion-button type="submit"  block>Add Employee</button>
+       </form>
+</ion-content>

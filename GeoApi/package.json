@@ -1,0 +1,16 @@
+{
+  "name": "geoapi",
+  "version": "1.0.0",
+  "description": "api for geolocation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Parminder Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "package": "^1.0.1"
+  }
+}

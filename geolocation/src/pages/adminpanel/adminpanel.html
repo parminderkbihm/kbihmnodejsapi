@@ -1,0 +1,30 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Admin Panel</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-grid>
+        <ion-row id="tablehead">
+            <ion-col>AttendenceId</ion-col>
+            <ion-col>EmployeeId</ion-col>
+            <ion-col>IMEI </ion-col>
+            <ion-col> Full Name</ion-col>
+            <ion-col>CurrentDate  </ion-col>
+            <ion-col> LoginTime</ion-col>
+            <ion-col> LogoutTime</ion-col>
+        </ion-row>
+        <ion-row id="tabledata" *ngFor="let ed of employeedata">
+            <ion-col> {{ed.AttendenceId}} </ion-col>
+            <ion-col> {{ed.EmployeeId}}</ion-col>
+            <ion-col> {{ed.IMEI}}</ion-col>
+            <ion-col>{{ed.FullName }}</ion-col>
+            <ion-col> {{ed.currentdate}}</ion-col>
+            <ion-col> {{ed.LoginTime}}</ion-col>
+            <ion-col> {{ed.LogoutTime}}</ion-col>
+          </ion-row>
+      </ion-grid>
+  <Button ion-button (click)="addemployee()">Add New Employee</Button>
+</ion-content>
