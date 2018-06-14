@@ -1,14 +1,16 @@
 {
-  "name": "nodeapi",
+  "name": "demonodeproject",
   "version": "1.0.0",
-  "description": "nodeapi",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "author": "p",
-  "license": "ISC",
+  "description": "writing first node app",
+  "main": "server.js",
   "dependencies": {
-    "mysql": "^2.15.0"
-  }
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "sanath",
+  "license": "ISC"
 }
