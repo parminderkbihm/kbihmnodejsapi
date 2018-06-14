@@ -53,8 +53,6 @@ export class HomePage {
    
   }
 
- 
-
   openAdminPage() {
     this.navCtrl.push(CheckinPage);
   }

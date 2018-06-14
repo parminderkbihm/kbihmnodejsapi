@@ -93,4 +93,5 @@
     <engine name="browser" spec="5.0.3" />
     <plugin name="cordova-plugin-android-permissions" spec="^1.0.0" />
     <allow-navigation href="http://192.168.1.162:8100" />
+    <allow-navigation href="http://localhost:8100" />
 </widget>
