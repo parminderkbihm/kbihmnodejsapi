@@ -7,16 +7,35 @@
 //   console.log( "Listening on " + server_ip_address + ", port " + server_port )
 // });
 
-var express=require('express');
 
-var app=express();
+var express =require('express');
 
+var app = express();
 
-app.get('/',function (req,res) {
-    res.writeHead(200,{'Content-Type':'text/plain'});
-    res.end('hello express');
-    console.log('text console')
+var port=process.env.PORT || 3000;
+
+app.use(express.static(__dirname + '/public'));
+
+app.get('/',function(req,res){
+
+console.log('hello from server');
+
+ res.render('./public/index.html');
 
 });
 
-app.listen(process.env.PORT || 1337) ;
+app.listen(port);
+
+console.log('Server Listening at port '+port);
+
+
+// var express=require('express');
+// var app=express();
+// app.get('/',function (req,res) {
+//     res.writeHead(200,{'Content-Type':'text/plain'});
+//     res.end('hello express');
+//     console.log('text console')
+
+// });
+
+// app.listen(process.env.PORT || 1337) ;
