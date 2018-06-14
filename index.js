@@ -8,25 +8,25 @@
 // });
 
 
-var express =require('express');
+// var express =require('express');
 
-var app = express();
+// var app = express();
 
-var port=process.env.PORT || 3000;
+// var port=process.env.PORT || 3000;
 
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
 
-app.get('/',function(req,res){
+// app.get('/',function(req,res){
 
-console.log('hello from server');
+// console.log('hello from server');
 
- res.render('./public/index.html');
+//  res.render('./public/index.html');
 
-});
+// });
 
-app.listen(port);
+// app.listen(port);
 
-console.log('Server Listening at port '+port);
+// console.log('Server Listening at port '+port);
 
 
 // var express=require('express');
